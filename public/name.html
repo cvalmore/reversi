@@ -10,8 +10,26 @@
     <title>Enter your username for Reversi</title>
     <style>
         #header-row{
-            background-color: #409531;
+            text-align: left;
         }
+		
+		#username{
+			margin: 10px 10px 0px 0px;
+		}
+		
+		#submitbtn{
+			margin: 10px 10px 0px 0px;
+			background: #1E885B;
+			color: white;
+			border: none;
+			padding: 8px 15px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			border-radius: 5px;
+		}
+		
     </style>
     
     <script>
@@ -30,12 +48,12 @@
         </div>
         <div class='row'>
             <div class='col'>
-                <form onsubmit='submitForm(); return false;' class='form-inline'>
+                <form onsubmit='submitForm(); return false;' class='form-inline' autocomplete="off">
                     <div class='form-group'>
                         <label for='username' class='col-form-label sr-only'>Enter your username</label>
                         <input class='form-control' type='text' value='' id='username' placeholder='Enter your username'/>
                     </div>
-                    <button type='submit' class='btn btn-default btn-success'>Submit</button>
+                    <button type='submit' class='btn btn-default btn-success' id='submitbtn'>Submit</button>
                 </form>
             </div>
         </div>
